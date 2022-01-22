@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
 import { LifecycleComponent } from './lifecycle/lifecycle.component';
+import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     DataBindingComponent,
-    LifecycleComponent
+    LifecycleComponent,
+    NgSwitchComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,8 @@
+<button (click)="aba = 1">Botão 1</button>
+<button (click)="aba = 2">Botão 2</button>
+
+<section [ngSwitch]="aba">
+  <p *ngSwitchCase="1">Botão 1 foi apertado</p>
+  <p *ngSwitchCase="2">Botão 2 foi apertado</p>
+  <p *ngSwitchDefault>Nenhum botão foi apertado</p>
+</section>
