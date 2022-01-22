@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'example';
+  valor: number = 5;
+  delete: boolean = false
+  mudar(){
+    this.valor++
+  }
+  deletar(){
+    this.delete = true
+  }
 }

@@ -1,0 +1,25 @@
+<section>
+  <article>
+    <h3>Interpolação:</h3>
+    <p>Meu Github é: {{ link }}</p>
+  </article>
+  <article>
+    <h3>Property Binding:</h3>
+    <img [src]="imgLink">
+  </article>
+  <article>
+    <h3>Style Binding:</h3>
+    <div [style.display]="link == 'https://github.com/IggorSantos' ? 'block' : 'none'">
+      Div apresentada para testar o style binding
+    </div>
+  </article>
+  <article>
+    <h3>Event Binding:</h3>
+    <button type="button" (click)="mostrar()">Me Clique</button>
+  </article>
+  <article>
+    <h3>Two-way Binding:</h3>
+    <input type="text" [(ngModel)]="nome">
+    <h3>{{ nome }}</h3>
+  </article>
+</section>
